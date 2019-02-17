@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New Recipe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h1>New Recipe</h1>
+    <div>
+        <input type="string" id="recipe_name" placeholder="Name of recipe" required>
+        <input type="string" id="creator_name" placeholder="Creator name">
+        <input type="string" id="food_type" placeholder="Food type"><br>
+    </div>
+
+    <div id="seperation">_________________________________________________________________</div>
+
+    <span><br>Enter ingredients list:</span>
+    <div id="ingdBox">
+        <form id="addIngd">
+            <button type="click">+</button>
+            <input type="string" id="ingredients" placeholder="ingredients">
+        </form>
+    </div>
+
+    <div id="seperation">_________________________________________________________________</div>
+
+    <span><br>Enter the directions required to make this recipe:</span><br>
+    <div>
+        <label for="prep">Preperation:</label><br> 
+        <textarea name="text1" id="prep" cols="35" rows="3"></textarea><br>
+        <label for="cook">Cooking tasks:</label><br>
+        <textarea name="text2" id="cook" cols="35" rows="3"></textarea><br>
+        <label for="ready">After cooking task</label><br>
+        <textarea name="text3" id="ready" cols="35" rows="3"></textarea>
+    </div>
+
+    <div id="seperation">_________________________________________________________________</div>
+
+    <span><br>Enter nutrition facts about recipe:</span>
+    <div>
+        <textarea name="text4" id="nutr" cols="35" rows="3"></textarea><br>
+    </div>
+
+    <form id="recipeDone">
+        <button type="submit">Save recipe</button>
+    </form>
+    
+</body>
+</html>
