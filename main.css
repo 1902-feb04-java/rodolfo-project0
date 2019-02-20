@@ -1,35 +1,64 @@
-.dropbtn{
-    background-color: darkgreen;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-}
-.personalRecipesbtn{
-    background-color: darkgreen;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-}
-.dropdown {
+
+.directions{
     position: relative;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+.ingdForm{
+    position: relative;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+.options{
+    position: relative;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+.textArea{
+    position: relative;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+.nav{
+    position: relative;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+.heading{
+    position: relative;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+.box{
+    width: 50%;
+}
+.btns{
     display: inline-block;
 }
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+/* .ingredients{
+    position: relative;
+    width: auto;
+    height: auto;
+    text-align: center;
+    display: inline-block;
 }
-.dropdown-content a {
-    color: black;
-    padding: 16px 16px;
-    text-decoration: none;
-    display: block;
+.info{
+    position: relative;
+    width: auto;
+    height: auto;
+    text-align: center;
+    display: inline-block;
 }
-.dropdown-content a:hover {background-color: #ddd;}
-.dropdown:hover .dropdown-content {display: block;}  
-.dropdown:hover .dropbtn {background-color: grey;}
+.final{
+    position: relative;
+    width: auto;
+    height: auto;
+    text-align: center;
+    display: inline-block;
+} */

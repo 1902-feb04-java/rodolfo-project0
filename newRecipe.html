@@ -6,31 +6,42 @@
     <title>New Recipe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
+    <script src="new.js"></script>
 </head>
 
 <body>
-    <h1>New Recipe</h1>
-    <div>
+    <h1 class="heading">New Recipe</h1>
+
+    <div class="heading">
         <input type="string" id="recipe_name" placeholder="Name of recipe" required>
-        <input type="string" id="creator_name" placeholder="Creator name">
-        <input type="string" id="food_type" placeholder="Food type"><br>
+        <input type="string" id="creator_name" placeholder="Creator name" required>
+        <input type="string" id="food_type" placeholder="Food type" required><br>
     </div>
 
-    <div id="seperation">_________________________________________________________________</div>
+    <hr />
 
-    <span><br>Enter ingredients list:</span>
-    <div id="ingdBox">
-        <form id="addIngd">
-            <button type="click">+</button>
-            <input type="string" id="ingredients" placeholder="ingredients">
+    <span>Enter ingredients list, along with units:</span>
+    <div class="ingdForm">
+        <form>
+            <input type="string" class="box" id="ingd1" placeholder="ex. 2 cups of sugar">
+            <br><br><input type="string" class="box" id="ingd2" placeholder="ex. 1/2 teaspoon almond extract">
+            <br><br><input type="string" class="box" id="ingd3">
+            <br><br><input type="string" class="box" id="ingd4">
+            <br><br><input type="string" class="box" id="ingd5">
+            <br><br><input type="string" class="box" id="ingd6">
+            <br><br><input type="string" class="box" id="ingd7">
+            <br><br><input type="string" class="box" id="ingd8">
+            <br><br><input type="string" class="box" id="ingd9">
+            <br><br><input type="string" class="box" id="ingd10">
+            <br><br><input type="string" class="box" id="ingd11">
+            <br><br><input type="string" class="box" id="ingd12">
         </form>
     </div>
 
-    <div id="seperation">_________________________________________________________________</div>
+    <hr />
 
-    <span><br>Enter the directions required to make this recipe:</span><br>
-    <div>
+    <span>Enter the directions required to make this recipe:</span><br>
+    <div class="directions">
         <label for="prep">Preperation:</label><br> 
         <textarea name="text1" id="prep" cols="35" rows="3"></textarea><br>
         <label for="cook">Cooking tasks:</label><br>
@@ -39,16 +50,19 @@
         <textarea name="text3" id="ready" cols="35" rows="3"></textarea>
     </div>
 
-    <div id="seperation">_________________________________________________________________</div>
+    <hr />
 
-    <span><br>Enter nutrition facts about recipe:</span>
-    <div>
+    <span>Enter nutrition facts about recipe:</span>
+    <div class="textArea">
         <textarea name="text4" id="nutr" cols="35" rows="3"></textarea><br>
     </div>
-
-    <form id="recipeDone">
-        <button type="submit">Save recipe</button>
-    </form>
-    
+    <div class="nav">
+        <form class="btns" id="recipeDone">
+            <button type="click">Save recipe</button>
+        </form> |
+        <form class="btns" id="exit">
+            <button type="submit">Exit</button>
+        </form>
+    </div>
 </body>
 </html>

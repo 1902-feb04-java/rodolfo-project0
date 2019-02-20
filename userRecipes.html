@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Recipies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="new.js"></script>
+</head>
+<body>
+    <h1 class="heading">My Recipes</h1>
+   
+    <div class="info">
+        <label>Title:</label><br>
+        <div id="name" value='name'></div>
+        <div id="creator"></div>    
+        <div id="type"></div>
+        <script> document.getElementById("name").innerHTML = localStorage.getItem("name")</script>
+        <script> document.getElementById("creator").innerHTML = localStorage.getItem("creator")</script>
+        <script> document.getElementById("type").innerHTML = localStorage.getItem("type")</script>
+    </div>
+    <hr />
+
+    <div class="ingredients">
+        <label>Ingredients:</label><br>
+        <div id="ingd1"></div>
+        <div id="ingd2"></div>
+        <div id="ingd3"></div>
+        <div id="ingd4"></div>
+        <div id="ingd5"></div>
+        <div id="ingd6"></div>
+        <div id="ingd7"></div>
+        <div id="ingd8"></div>
+        <div id="ingd9"></div>
+        <div id="ingd9"></div>
+        <div id="ingd10"></div>
+        <div id="ingd11"></div>
+        <div id="ingd12"></div>
+        <script> document.getElementById("ingd1").innerHTML = localStorage.getItem("ingd1")</script>
+        <script> document.getElementById("ingd2").innerHTML = localStorage.getItem("ingd2")</script>
+        <script> document.getElementById("ingd3").innerHTML = localStorage.getItem("ingd3")</script>
+        <script> document.getElementById("ingd4").innerHTML = localStorage.getItem("ingd4")</script>
+        <script> document.getElementById("ingd5").innerHTML = localStorage.getItem("ingd5")</script>
+        <script> document.getElementById("ingd6").innerHTML = localStorage.getItem("ingd6")</script>
+        <script> document.getElementById("ingd7").innerHTML = localStorage.getItem("ingd7")</script>
+        <script> document.getElementById("ingd8").innerHTML = localStorage.getItem("ingd8")</script>
+        <script> document.getElementById("ingd9").innerHTML = localStorage.getItem("ingd8")</script>
+        <script> document.getElementById("ingd10").innerHTML = localStorage.getItem("ingd8")</script>
+        <script> document.getElementById("ingd11").innerHTML = localStorage.getItem("ingd8")</script>
+        <script> document.getElementById("ingd12").innerHTML = localStorage.getItem("ingd8")</script>
+    </div>
+    <hr />
+    <div class="final">
+        <label>Directions:</label><br>
+        <div id="prep"></div>
+        <div id="cook"></div>
+        <div id="ready"></div>
+        <div id="nutr"></div>  
+        <script> document.getElementById("prep").innerHTML = localStorage.getItem("prep")</script>
+        <script> document.getElementById("cook").innerHTML = localStorage.getItem("cook")</script>
+        <script> document.getElementById("ready").innerHTML = localStorage.getItem("read")</script>
+        <script> document.getElementById("nutr").innerHTML = localStorage.getItem("nutr")</script>
+    </div>
+    <br><br><br>
+    <form class="btns" id="exit">
+        <button type="submit">Exit</button>
+    </form>
+</body>
+</html>

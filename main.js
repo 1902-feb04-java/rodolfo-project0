@@ -1,31 +1,20 @@
 'use strict';
 
+
 document.addEventListener('DOMContentLoaded', () => {
-    let addIngredient = document.getElementById("addIngd");
+
     let openRecipePage = document.getElementById("createRecipe");
 
     openRecipePage.addEventListener("submit", event => {
-        event.preventDefault();
+        event.preventDefault(); 
         window.location = "./newRecipe.html";
     });   
 });
 document.addEventListener('DOMContentLoaded', () => {
-    let addIngredient = document.getElementById("addIngd");
+    let user_recipes = document.getElementById("user_recipes");
 
-    addIngredient.addEventListener("click", event => {
+    user_recipes.addEventListener('submit', event => {
         event.preventDefault();
-
-        let inputbtn = document.createElement('INPUT');
-        let text = document.createTextNode('');
-        inputbtn.appendChild(text);
-        document.getElementById("ingdBox").appendChild(inputbtn);
-    });
-});
-document.addEventListener('DOMContentLoaded', () =>{
-    let returnToMain = document.getElementById("recipeDone");
-
-    returnToMain.addEventListener("submit", event => {
-        event.preventDefault();
-        window.location = "./index.html";
+        window.location = "./userRecipes.html";
     });
 });
