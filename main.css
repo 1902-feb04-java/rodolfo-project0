@@ -11,54 +11,134 @@
     height: auto;
     text-align: center;
 }
-.options{
-    position: relative;
-    width: auto;
-    height: auto;
-    text-align: center;
-}
 .textArea{
     position: relative;
     width: auto;
     height: auto;
     text-align: center;
 }
-.nav{
-    position: relative;
-    width: auto;
-    height: auto;
+.nav_new{
+    position: fixed;
+    bottom: 1%;
+    left: 30%;
+    text-align: center;
+}
+.nav_home{
+    position: fixed;
+    bottom: 5%;
+    left: 43%;
+    text-align: center;
+}
+.nav_user{
+    position: fixed;
+    bottom: 1%;
+    left: 50%;
     text-align: center;
 }
 .heading{
     position: relative;
+    background-color: white;
+    text-align: center;
+}
+.heading1{
+    position: relative;
+    background-color: white;
+    text-align: center;
+    width: 200px;
+    left: 40%;
+}
+.search_options{
+    position: relative;
+    text-align: left;
+    width: 400px;
+    height: 50px
+}
+.text{
     width: auto;
     height: auto;
     text-align: center;
 }
 .box{
-    width: 50%;
+    width: 55%;
 }
 .btns{
     display: inline-block;
 }
-/* .ingredients{
+.ingredients{
     position: relative;
     width: auto;
     height: auto;
     text-align: center;
     display: inline-block;
 }
-.info{
+.title{
     position: relative;
     width: auto;
     height: auto;
     text-align: center;
     display: inline-block;
 }
-.final{
-    position: relative;
-    width: auto;
-    height: auto;
-    text-align: center;
+.first{
+    border: 7px groove firebrick;
+    padding: 5px;
     display: inline-block;
-} */
+    width: 250px;
+    height: auto;
+    background-color: aqua;
+}
+.second{
+    border: 10px dotted lightcoral;
+    padding: 5px;
+    display: inline-block;
+    width: 250px;
+    height: auto;
+    background-color: lightblue;
+}
+.third{
+    border: 1px solid black;
+    padding: 5px;
+    display: inline-block;
+    width: 250px;
+    height: auto;
+    background-color: lightcoral;
+}
+.fourth{
+    border: 3px dashed orange;
+    padding: 5px;
+    display: inline-block; 
+    width: 250px;
+    height: auto;
+    background-color: lightgoldenrodyellow;
+}
+.fifth{
+    border: 5px solid green;
+    padding: 5px;
+    display: inline-block;
+    width: 250px;
+    height: auto;
+    background-color: lightgreen;
+}
+.div{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.div1{
+    position: relative;
+    border: 3px solid black;
+    left: 35%;
+    display: inline-block;
+    text-align: center;
+}
+.div2{
+    position: relative;
+    left: 15%;
+    top: 220px;
+    border: 3px solid black;
+    display: inline-block;
+    text-align: center;
+}
+.body{
+    background-color: lightgrey;
+    
+}

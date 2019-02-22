@@ -1,51 +1,263 @@
 'use strict';
 
-// var recipe1 = new Object;
-// var recipe2 = new Object;
-// var recipe3 = new Object;
-// var recipe4 = new Object;
-// var recipe5 = new Object;
+var recipe1 = new Object;
+var recipe2 = new Object;
+var recipe3 = new Object;
+var recipe4 = new Object;
+var recipe5 = new Object;
+let recipe_num; 
 
-document.addEventListener('DOMContentLoaded', () =>{
-    let exit = document.getElementById('exit');
-    exit.addEventListener('submit', event => {
+document.addEventListener('DOMContentLoaded', () => {
+    let done = document.getElementById("exit");
+
+    done.addEventListener('click', event => {
         event.preventDefault();
-        window.location = "./index.html";
+        window.location = "./home.html";
     });
 });
 document.addEventListener('DOMContentLoaded', () => {
-    let save_recipe = document.getElementById("recipeDone");
-    let update = document.getElementById("update");
-    save_recipe.addEventListener("click", event => {
+    let home = document.getElementById("home");
+
+    home.addEventListener('click', event => {
         event.preventDefault();
-        
-        localStorage.setItem("name",document.getElementById("recipe_name").value);
-        localStorage.setItem("creator",document.getElementById("creator_name").value);
-        localStorage.setItem("type",document.getElementById("food_type").value);
-        localStorage.setItem("ingd1",document.getElementById("ingd1").value);
-        localStorage.setItem("ingd2",document.getElementById("ingd2").value);
-        localStorage.setItem("ingd3",document.getElementById("ingd3").value);
-        localStorage.setItem("ingd4",document.getElementById("ingd4").value);
-        localStorage.setItem("ingd5",document.getElementById("ingd5").value);
-        localStorage.setItem("ingd6",document.getElementById("ingd6").value);
-        localStorage.setItem("ingd7",document.getElementById("ingd7").value);
-        localStorage.setItem("ingd8",document.getElementById("ingd8").value);
-        localStorage.setItem("ingd9",document.getElementById("ingd9").value);
-        localStorage.setItem("ingd10",document.getElementById("ingd10").value);
-        localStorage.setItem("ingd11",document.getElementById("ingd11").value);
-        localStorage.setItem("ingd12",document.getElementById("ingd12").value);
-        localStorage.setItem("prep",document.getElementById("prep").value);
-        localStorage.setItem("cook",document.getElementById("cook").value);
-        localStorage.setItem("ready",document.getElementById("ready").value);
-        localStorage.setItem("nutr",document.getElementById("nutr").value);
-        window.location = "./userRecipes.html";        
+        window.location = "./home.html";
+    });
+});
+function populate(num){
+    if(num === '1'){
+        recipe1.name = localStorage.getItem("name1");
+        recipe1.creator = localStorage.getItem("creator1");
+        recipe1.type = localStorage.getItem("type1");
+        recipe1.ingd1 = localStorage.getItem("ingd1_1");
+        recipe1.ingd2 = localStorage.getItem("ingd1_2");
+        recipe1.ingd3 = localStorage.getItem("ingd1_3");
+        recipe1.ingd4 = localStorage.getItem("ingd1_4");
+        recipe1.ingd5 = localStorage.getItem("ingd1_5");
+        recipe1.ingd6 = localStorage.getItem("ingd1_6");
+        recipe1.ingd7 = localStorage.getItem("ingd1_7");
+        recipe1.ingd8 = localStorage.getItem("ingd1_8");
+        recipe1.ingd9 = localStorage.getItem("ingd1_9");
+        recipe1.ingd10 = localStorage.getItem("ingd1_10");
+        recipe1.ingd11 = localStorage.getItem("ingd1_11");
+        recipe1.ingd12 = localStorage.getItem("ingd1_12");
+        recipe1.prep = localStorage.getItem("prep1");
+        recipe1.cook = localStorage.getItem("cook1");
+        recipe1.ready = localStorage.getItem("ready1");
+        recipe1.nutr = localStorage.getItem("nutr1");
+    }else if(num === '2'){
+        recipe2.name = localStorage.getItem("name");
+        recipe2.creator = localStorage.getItem("creator_name");
+        recipe2.type = localStorage.getItem("type");
+        recipe2.ingd1 = localStorage.getItem("ingd1");
+        recipe2.ingd2 = localStorage.getItem("ingd2");
+        recipe2.ingd3 = localStorage.getItem("ingd3");
+        recipe2.ingd4 = localStorage.getItem("ingd4");
+        recipe2.ingd5 = localStorage.getItem("ingd5");
+        recipe2.ingd6 = localStorage.getItem("ingd6");
+        recipe2.ingd7 = localStorage.getItem("ingd7");
+        recipe2.ingd8 = localStorage.getItem("ingd8");
+        recipe2.ingd9 = localStorage.getItem("ingd9");
+        recipe2.ingd10 = localStorage.getItem("ingd10");
+        recipe2.ingd11 = localStorage.getItem("ingd11");
+        recipe2.ingd12 = localStorage.getItem("ingd12");
+        recipe2.prep = localStorage.getItem("prep");
+        recipe2.cook = localStorage.getItem("cook");
+        recipe2.ready = localStorage.getItem("ready");
+        recipe2.nutr = localStorage.getItem("nutr");
+    }else if(num === '3'){
+        recipe3.name = localStorage.getItem("name");
+        recipe3.creator = localStorage.getItem("creator_name");
+        recipe3.type = localStorage.getItem("type");
+        recipe3.ingd1 = localStorage.getItem("ingd1");
+        recipe3.ingd2 = localStorage.getItem("ingd2");
+        recipe3.ingd3 = localStorage.getItem("ingd3");
+        recipe3.ingd4 = localStorage.getItem("ingd4");
+        recipe3.ingd5 = localStorage.getItem("ingd5");
+        recipe3.ingd6 = localStorage.getItem("ingd6");
+        recipe3.ingd7 = localStorage.getItem("ingd7");
+        recipe3.ingd8 = localStorage.getItem("ingd8");
+        recipe3.ingd9 = localStorage.getItem("ingd9");
+        recipe3.ingd10 = localStorage.getItem("ingd10");
+        recipe3.ingd11 = localStorage.getItem("ingd11");
+        recipe3.ingd12 = localStorage.getItem("ingd12");
+        recipe3.prep = localStorage.getItem("prep");
+        recipe3.cook = localStorage.getItem("cook");
+        recipe3.ready = localStorage.getItem("ready");
+        recipe3.nutr = localStorage.getItem("nutr");
+    }else if(num === '4'){
+        recipe4.name = localStorage.getItem("name");
+        recipe4.creator = localStorage.getItem("creator_name");
+        recipe4.type = localStorage.getItem("type");
+        recipe4.ingd1 = localStorage.getItem("ingd1");
+        recipe4.ingd2 = localStorage.getItem("ingd2");
+        recipe4.ingd3 = localStorage.getItem("ingd3");
+        recipe4.ingd4 = localStorage.getItem("ingd4");
+        recipe4.ingd5 = localStorage.getItem("ingd5");
+        recipe4.ingd6 = localStorage.getItem("ingd6");
+        recipe4.ingd7 = localStorage.getItem("ingd7");
+        recipe4.ingd8 = localStorage.getItem("ingd8");
+        recipe4.ingd9 = localStorage.getItem("ingd9");
+        recipe4.ingd10 = localStorage.getItem("ingd10");
+        recipe4.ingd11 = localStorage.getItem("ingd11");
+        recipe4.ingd12 = localStorage.getItem("ingd12");
+        recipe4.prep = localStorage.getItem("prep");
+        recipe4.cook = localStorage.getItem("cook");
+        recipe4.ready = localStorage.getItem("ready");
+        recipe4.nutr = localStorage.getItem("nutr");
+    }else if(num === '5'){
+        recipe5.name = localStorage.getItem("name");
+        recipe5.creator = localStorage.getItem("creator_name");
+        recipe5.type = localStorage.getItem("type");
+        recipe5.ingd1 = localStorage.getItem("ingd1");
+        recipe5.ingd2 = localStorage.getItem("ingd2");
+        recipe5.ingd3 = localStorage.getItem("ingd3");
+        recipe5.ingd4 = localStorage.getItem("ingd4");
+        recipe5.ingd5 = localStorage.getItem("ingd5");
+        recipe5.ingd6 = localStorage.getItem("ingd6");
+        recipe5.ingd7 = localStorage.getItem("ingd7");
+        recipe5.ingd8 = localStorage.getItem("ingd8");
+        recipe5.ingd9 = localStorage.getItem("ingd9");
+        recipe5.ingd10 = localStorage.getItem("ingd10");
+        recipe5.ingd11 = localStorage.getItem("ingd11");
+        recipe5.ingd12 = localStorage.getItem("ingd12");
+        recipe5.prep = localStorage.getItem("prep");
+        recipe5.cook = localStorage.getItem("cook");
+        recipe5.ready = localStorage.getItem("ready");
+        recipe5.nutr = localStorage.getItem("nutr");
+    }
+};
+document.addEventListener('DOMContentLoaded', () => {
+    let save_1 = document.getElementById("save_1");
+    save_1.addEventListener("click", event => {
+        event.preventDefault();
+        recipe_num = 1;
+        localStorage.setItem("name1",document.getElementById("recipe_name").value);
+        localStorage.setItem("creator1",document.getElementById("creator_name").value);
+        localStorage.setItem("type1",document.getElementById("food_type").value);
+        localStorage.setItem("ingd1_1",document.getElementById("ingd1").value);
+        localStorage.setItem("ingd1_2",document.getElementById("ingd2").value);
+        localStorage.setItem("ingd1_3",document.getElementById("ingd3").value);
+        localStorage.setItem("ingd1_4",document.getElementById("ingd4").value);
+        localStorage.setItem("ingd1_5",document.getElementById("ingd5").value);
+        localStorage.setItem("ingd1_6",document.getElementById("ingd6").value);
+        localStorage.setItem("ingd1_7",document.getElementById("ingd7").value);
+        localStorage.setItem("ingd1_8",document.getElementById("ingd8").value);
+        localStorage.setItem("ingd1_9",document.getElementById("ingd9").value);
+        localStorage.setItem("ingd1_10",document.getElementById("ingd10").value);
+        localStorage.setItem("ingd1_11",document.getElementById("ingd11").value);
+        localStorage.setItem("ingd1_12",document.getElementById("ingd12").value);
+        localStorage.setItem("prep1",document.getElementById("prep").value);
+        localStorage.setItem("cook1",document.getElementById("cook").value);
+        localStorage.setItem("ready1",document.getElementById("ready").value);
+        localStorage.setItem("nutr1",document.getElementById("nutr").value); 
+        populate(recipe_num);
     });
 });
 document.addEventListener('DOMContentLoaded', () => {
-    let upload = document.getElementById("exit");
-
-    upload.addEventListener('click', event => {
+    let save_2 = document.getElementById("save_2");
+    save_2.addEventListener("click", event => {
         event.preventDefault();
-        window.location = "./index.html";
+        recipe_num = 2;
+        localStorage.setItem("name2",document.getElementById("recipe_name").value);
+        localStorage.setItem("creator2",document.getElementById("creator_name").value);
+        localStorage.setItem("type2",document.getElementById("food_type").value);
+        localStorage.setItem("ingd2_1",document.getElementById("ingd1").value);
+        localStorage.setItem("ingd2_2",document.getElementById("ingd2").value);
+        localStorage.setItem("ingd2_3",document.getElementById("ingd3").value);
+        localStorage.setItem("ingd2_4",document.getElementById("ingd4").value);
+        localStorage.setItem("ingd2_5",document.getElementById("ingd5").value);
+        localStorage.setItem("ingd2_6",document.getElementById("ingd6").value);
+        localStorage.setItem("ingd2_7",document.getElementById("ingd7").value);
+        localStorage.setItem("ingd2_8",document.getElementById("ingd8").value);
+        localStorage.setItem("ingd2_9",document.getElementById("ingd9").value);
+        localStorage.setItem("ingd2_10",document.getElementById("ingd10").value);
+        localStorage.setItem("ingd2_11",document.getElementById("ingd11").value);
+        localStorage.setItem("ingd2_12",document.getElementById("ingd12").value);
+        localStorage.setItem("prep2",document.getElementById("prep").value);
+        localStorage.setItem("cook2",document.getElementById("cook").value);
+        localStorage.setItem("ready2",document.getElementById("ready").value);
+        localStorage.setItem("nutr2",document.getElementById("nutr").value); 
+        populate(recipe_num);
+    });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    let save_3 = document.getElementById("save_3");
+    save_3.addEventListener("click", event => {
+        event.preventDefault();
+        recipe_num = 3;
+        localStorage.setItem("name3",document.getElementById("recipe_name").value);
+        localStorage.setItem("creator3",document.getElementById("creator_name").value);
+        localStorage.setItem("type3",document.getElementById("food_type").value);
+        localStorage.setItem("ingd3_1",document.getElementById("ingd1").value);
+        localStorage.setItem("ingd3_2",document.getElementById("ingd2").value);
+        localStorage.setItem("ingd3_3",document.getElementById("ingd3").value);
+        localStorage.setItem("ingd3_4",document.getElementById("ingd4").value);
+        localStorage.setItem("ingd3_5",document.getElementById("ingd5").value);
+        localStorage.setItem("ingd3_6",document.getElementById("ingd6").value);
+        localStorage.setItem("ingd3_7",document.getElementById("ingd7").value);
+        localStorage.setItem("ingd3_8",document.getElementById("ingd8").value);
+        localStorage.setItem("ingd3_9",document.getElementById("ingd9").value);
+        localStorage.setItem("ingd3_10",document.getElementById("ingd10").value);
+        localStorage.setItem("ingd3_11",document.getElementById("ingd11").value);
+        localStorage.setItem("ingd3_12",document.getElementById("ingd12").value);
+        localStorage.setItem("prep3",document.getElementById("prep").value);
+        localStorage.setItem("cook3",document.getElementById("cook").value);
+        localStorage.setItem("ready3",document.getElementById("ready").value);
+        localStorage.setItem("nutr3",document.getElementById("nutr").value); 
+        populate(recipe_num);
+    });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    let save_4 = document.getElementById("save_4");
+    save_4.addEventListener("click", event => {
+        event.preventDefault();
+        recipe_num = 4;
+        localStorage.setItem("name4",document.getElementById("recipe_name").value);
+        localStorage.setItem("creator4",document.getElementById("creator_name").value);
+        localStorage.setItem("type4",document.getElementById("food_type").value);
+        localStorage.setItem("ingd4_1",document.getElementById("ingd1").value);
+        localStorage.setItem("ingd4_2",document.getElementById("ingd2").value);
+        localStorage.setItem("ingd4_3",document.getElementById("ingd3").value);
+        localStorage.setItem("ingd4_4",document.getElementById("ingd4").value);
+        localStorage.setItem("ingd4_5",document.getElementById("ingd5").value);
+        localStorage.setItem("ingd4_6",document.getElementById("ingd6").value);
+        localStorage.setItem("ingd4_7",document.getElementById("ingd7").value);
+        localStorage.setItem("ingd4_8",document.getElementById("ingd8").value);
+        localStorage.setItem("ingd4_9",document.getElementById("ingd9").value);
+        localStorage.setItem("ingd4_10",document.getElementById("ingd10").value);
+        localStorage.setItem("ingd4_11",document.getElementById("ingd11").value);
+        localStorage.setItem("ingd4_12",document.getElementById("ingd12").value);
+        localStorage.setItem("prep4",document.getElementById("prep").value);
+        localStorage.setItem("cook4",document.getElementById("cook").value);
+        localStorage.setItem("ready4",document.getElementById("ready").value);
+        localStorage.setItem("nutr4",document.getElementById("nutr").value); 
+        populate(recipe_num);
+    });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    let save_5 = document.getElementById("save_5");
+    save_5.addEventListener("click", event => {
+        event.preventDefault();
+        recipe_num = 5;
+        localStorage.setItem("name5",document.getElementById("recipe_name").value);
+        localStorage.setItem("creator5",document.getElementById("creator_name").value);
+        localStorage.setItem("type5",document.getElementById("food_type").value);
+        localStorage.setItem("ingd5_1",document.getElementById("ingd1").value);
+        localStorage.setItem("ingd5_2",document.getElementById("ingd2").value);
+        localStorage.setItem("ingd5_3",document.getElementById("ingd3").value);
+        localStorage.setItem("ingd5_4",document.getElementById("ingd4").value);
+        localStorage.setItem("ingd5_5",document.getElementById("ingd5").value);
+        localStorage.setItem("ingd5_6",document.getElementById("ingd6").value);
+        localStorage.setItem("ingd5_7",document.getElementById("ingd7").value);
+        localStorage.setItem("ingd5_8",document.getElementById("ingd8").value);
+        localStorage.setItem("ingd5_9",document.getElementById("ingd9").value);
+        localStorage.setItem("ingd5_10",document.getElementById("ingd10").value);
+        localStorage.setItem("ingd5_11",document.getElementById("ingd11").value);
+        localStorage.setItem("ingd5_12",document.getElementById("ingd12").value);
+        localStorage.setItem("prep5",document.getElementById("prep").value);
+        localStorage.setItem("cook5",document.getElementById("cook").value);
+        localStorage.setItem("ready5",document.getElementById("ready").value);
+        localStorage.setItem("nutr5",document.getElementById("nutr").value); 
+        populate(recipe_num);
     });
 });

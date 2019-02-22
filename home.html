@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Main page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body class="body">
+    <div class="div2">
+        <h1 class="heading1">Recipe book</h1>
+        <div class="search_options">
+            <label>Quick Seaches:</label>
+            <form id="location" placeholder="location search" action="https://www.google.com/maps" target="_blank">
+                <input name="q">
+                <button type="submit">Google maps</button>
+            </form>
+            <form id="search" action="http://google.com/search" target="_blank">
+                <input name="q">
+                <button type="submit">Google search</button>
+            </form>
+        </div><br>
+        <hr />
+        <span class="text">
+            This web application is intended for the everyday cook. You can store
+            your favorite recipes, do quick searches on google for food ideas 
+            and nearby food locations.
+        </span>
+        <hr />
+        <div class="nav_home">
+            <form class="btns" id="home">
+                    <button type="click">Home</button>
+            </form>
+            <form id="createRecipe" class="btns">
+                <button type="submit">Create recipe</button>
+            </form>
+            <form id="user_recipes" class="btns">
+                <button type="submit">My Recipes</button>
+            </form>
+        </div>
+    </div>    
+</body>
+</html>
